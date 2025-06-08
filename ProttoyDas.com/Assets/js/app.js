@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTrigger: {
             trigger: signGif,
             start: 'center 20%',
-            end: 'bottom 50%%',
+            end: 'bottom 50%',
             scrub: true
         }
     });
