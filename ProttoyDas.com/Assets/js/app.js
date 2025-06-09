@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const h1Elements = document.querySelectorAll('h1');
     const aElements = document.querySelectorAll('a');
 
-    // PLAY AUDIO WHEN BUTTON CLICKED
+    // Scroll to Top on Click
     const bodyTop = document.getElementById('bodyTop');
     bodyTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -17,41 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const isSticky = window.scrollY > 200;
         bodyTop.classList.toggle('sticky', isSticky);
         header.classList.toggle('sticky', isSticky);
-    });
-
-
-    // ANIMATE TEXT
-    const myText = new SplitType('#developer-txt');
-
-    gsap.to('.char', {
-        y: 0,
-        stagger: 0.05,
-        delay: 0.2,
-        duration: 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: '#developer-txt',
-            start: 'top 95%',
-            end: 'bottom 80%',
-            scrub: true
-        }
-    });
-
-
-    // ANIMATE SIGNATURE GIF ON SCROLL
-    const signGif = document.getElementById('signature-gif');
-
-    gsap.to(signGif, {
-        y: 280,
-        delay: 0.2,
-        duration: 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: signGif,
-            start: 'center 20%',
-            end: 'bottom 50%',
-            scrub: true
-        }
     });
 
 

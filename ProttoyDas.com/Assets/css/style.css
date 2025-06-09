@@ -198,11 +198,6 @@ a {
     transition: transform 1s;
 }
 
-.home #signature-gif {
-    transform: translateY(20%);
-    transition: transform 1s;
-}
-
 .section-label {
     background: rgb(0, 153, 255);
     padding: 3px 20px;
